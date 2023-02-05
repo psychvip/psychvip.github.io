@@ -55,5 +55,6 @@ function showRegister() {
         document.getElementById("submit-btn").innerText = "login";
     }
 }
+
 document.getElementById("forgot-btn").addEventListener("click", forgotPassword);
 document.getElementById("register-btn").addEventListener("click", showRegister);
