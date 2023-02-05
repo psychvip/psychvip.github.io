@@ -47,6 +47,10 @@ nav>a:hover {
 form {
     text-align: center;
 }
+form>a {
+    color: var(--fg);
+    text-decoration: none;
+}
 input {
     background: var(--bg);
     border: 1px solid var(--fg);
@@ -56,6 +60,7 @@ input {
     margin: 10px 0 10px 0;
     padding: 10px;
     outline: none;
+    text-align: center;
 }
 button {
     background: var(--fg);
@@ -66,7 +71,6 @@ button {
     margin: 10px 0 10px 0;
     padding: 10px;
     outline: none;
+    text-align: center;
 }
-h2 {
-    text-decoration: overline underline;
-}
+h2 { text-decoration: overline underline; }
