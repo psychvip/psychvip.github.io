@@ -4,9 +4,11 @@ function openFeats() {
     if (feats.style.left === "-160px") {
         feats.style.left = "0px";
         hidebtn.style.left = "155px";
+        hidebtn.innerHTML = "&lt;-";
     } else {
         feats.style.left = "-160px";
         hidebtn.style.left = "-5px";
+        hidebtn.innerHTML = "-&gt;";
     }
 }
 
