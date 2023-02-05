@@ -1,3 +1,15 @@
+function openFeats() {
+    let feats = document.getElementsByClassName("features")[0];
+    let hidebtn = document.getElementsByClassName("hide-btn")[0];
+    if (feats.style.left === "-160px") {
+        feats.style.left = "0px";
+        hidebtn.style.left = "155px";
+    } else {
+        feats.style.left = "-160px";
+        hidebtn.style.left = "-5px";
+    }
+}
+
 function showLogin() {
     let logincontainer = document.getElementById("login-container");
     let videocontainer = document.getElementById("video-container");
