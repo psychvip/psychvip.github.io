@@ -1,9 +1,26 @@
 function showLogin() {
     let logincontainer = document.getElementById("login-container");
+    let videocontainer = document.getElementById("video-container");
     if (logincontainer.style.display === "none") {
+        if(videocontainer.style.display === "block") {
+            videocontainer.style.display = "none";
+        }
         logincontainer.style.display = "block";
     } else {
         logincontainer.style.display = "none";
+    }
+}
+
+function showVideo() {
+    let logincontainer = document.getElementById("login-container");
+    let videocontainer = document.getElementById("video-container");
+    if (videocontainer.style.display === "none") {
+        if(logincontainer.style.display === "block") {
+            logincontainer.style.display = "none";
+        }
+        videocontainer.style.display = "block";
+    } else {
+        videocontainer.style.display = "none";
     }
 }
 

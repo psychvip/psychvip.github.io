@@ -97,4 +97,20 @@ input {
     color: var(--bg);
     text-shadow: var(--bg) 0 0 8px;
 }
+/*video container*/
+#video-container {
+    display: none;
+    background: var(--bg);
+    min-width: 350px;
+    width: 50%;
+    max-width: 666px;
+    height: 370px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: #000 0 0 10px;
+    text-align: center;
+}
+/*main content*/
 h2 { text-decoration: overline underline; }
