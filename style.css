@@ -62,7 +62,8 @@ input {
     outline: none;
     text-align: center;
 }
-button {
+#email-input, #invite-input { display:none; }
+#submit-btn {
     background: var(--fg);
     border: 1px solid var(--fg);
     color: var(--bg);
@@ -72,5 +73,28 @@ button {
     padding: 10px;
     outline: none;
     text-align: center;
+    transition: 250ms;
+}
+#submit-btn:hover {
+    background: var(--bg);
+    color: var(--fg);
+    text-shadow: var(--fg) 0 0 8px;
+}
+#register-btn, #forgot-btn {
+    background: var(--bg);
+    border: 1px solid var(--fg);
+    color: var(--fg);
+    font-family: monospace;
+    font-size: 14px;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    outline: none;
+    text-align: center;
+    transition: 250ms;
+}
+#register-btn:hover, #forgot-btn:hover {
+    background: var(--fg);
+    color: var(--bg);
+    text-shadow: var(--bg) 0 0 8px;
 }
 h2 { text-decoration: overline underline; }
