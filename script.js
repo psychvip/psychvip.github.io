@@ -91,18 +91,7 @@ function forgotPassword() {
 }
 
 function showRegister() {
-    if (document.getElementById("email-input").style.display === "none" || document.getElementById("invite-input").style.display === "none") {
-        registerOpen = true;
-        loginOpen = false;
-        document.getElementById("email-input").style.display = "inline-block";
-        document.getElementById("invite-input").style.display = "inline-block";
-        document.getElementById("pass-input").style.display = "inline-block";
-        document.getElementById("user-input").placeholder = "user";
-        document.getElementById("login-container").style.height = "400px";
-        document.getElementById("submit-btn").innerText = "make acc";
-        document.getElementById("register-btn").innerText = "back";
-        document.getElementById("forgot-btn").innerText = "4got pwd?";
-    } else {
+    if (document.getElementById("email-input").style.display === "inline-block" || document.getElementById("invite-input").style.display === "inline-block") {
         registerOpen = false;
         loginOpen = true;
         document.getElementById("email-input").style.display = "none";
@@ -112,6 +101,17 @@ function showRegister() {
         document.getElementById("login-container").style.height = "285px";
         document.getElementById("submit-btn").innerText = "login";
         document.getElementById("register-btn").innerText = "register";
+        document.getElementById("forgot-btn").innerText = "4got pwd?";
+    } else {
+        registerOpen = true;
+        loginOpen = false;
+        document.getElementById("email-input").style.display = "inline-block";
+        document.getElementById("invite-input").style.display = "inline-block";
+        document.getElementById("pass-input").style.display = "inline-block";
+        document.getElementById("user-input").placeholder = "user";
+        document.getElementById("login-container").style.height = "400px";
+        document.getElementById("submit-btn").innerText = "make acc";
+        document.getElementById("register-btn").innerText = "back";
         document.getElementById("forgot-btn").innerText = "4got pwd?";
     }
     console.log("registerOpen: " + registerOpen);
