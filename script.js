@@ -1,4 +1,4 @@
-let featsOpen = false, videoOpen = false;
+let featsOpen = true, videoOpen = false;
 let loginOpen = false, registerOpen = false, forgotOpen = false;
 
 function openFeats() {
@@ -17,6 +17,18 @@ function openFeats() {
     }
     console.log("featsOpen: " + featsOpen);
 }
+
+//if window is resized and feats are open and window is less than 671px, close feats
+window.addEventListener("resize", function() {
+    let feats = document.getElementsByClassName("features")[0];
+    let hidebtn = document.getElementsByClassName("hide-btn")[0];
+    if (featsOpen && window.innerWidth <= 671) {
+        featsOpen = false;
+        feats.style.left = "-160px";
+        hidebtn.style.left = "-5px";
+        hidebtn.innerHTML = "-&gt;";
+    }
+});
 
 function showLogin() {
     let logincontainer = document.getElementById("login-container");
