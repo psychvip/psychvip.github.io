@@ -154,3 +154,16 @@ h4 {
     transition: 250ms;
 }
 .hide-btn:hover { box-shadow: var(--fg) 0 0 2px; }
+/*tagline*/
+.tagline {
+    background: var(--bg);
+    color: var(--text);
+    text-align: center;
+    width: 250px;
+    position: fixed;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: #000 0 0 10px;
+}
+.tagline>h2 { text-decoration: var(--text) dotted underline; }
