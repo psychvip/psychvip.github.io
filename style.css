@@ -121,7 +121,7 @@ h2 { text-decoration: overline underline; }
     background: var(--bg);
     color: var(--text);
     text-align: center;
-    width: 160px;
+    width: 175px;
     height: 100%;
     position: fixed;
     top: 0;
@@ -147,7 +147,7 @@ h4 {
     width: 25px;
     height: 25px;
     top: 50%;
-    left: 155px;
+    left: 170px;
     background-color: var(--bg);
     border: 1.5px solid #000;
     color: var(--fg);

@@ -4,14 +4,14 @@ let loginOpen = false, registerOpen = false, forgotOpen = false;
 function openFeats() {
     let feats = document.getElementsByClassName("features")[0];
     let hidebtn = document.getElementsByClassName("hide-btn")[0];
-    if (feats.style.left === "-160px") {
+    if (feats.style.left === "-175px") {
         featsOpen = true;
         feats.style.left = "0px";
-        hidebtn.style.left = "155px";
+        hidebtn.style.left = "170px";
         hidebtn.innerHTML = "&lt;-";
     } else {
         featsOpen = false;
-        feats.style.left = "-160px";
+        feats.style.left = "-175px";
         hidebtn.style.left = "-5px";
         hidebtn.innerHTML = "-&gt;";
     }
@@ -25,7 +25,7 @@ window.addEventListener("resize", function() {
     let hidebtn = document.getElementsByClassName("hide-btn")[0];
     if (featsOpen && window.innerWidth <= 671 && windowOpen) {
         featsOpen = false;
-        feats.style.left = "-160px";
+        feats.style.left = "-175px";
         hidebtn.style.left = "-5px";
         hidebtn.innerHTML = "-&gt;";
     }
